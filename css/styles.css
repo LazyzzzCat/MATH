@@ -1,0 +1,89 @@
+body {
+    font-family: "Stalinist One", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #030303;
+    color: #030303;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.card {
+    width: 90vw;
+    height: 70vh;
+    padding: 30px;
+    margin: -10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+h2 {
+    font-size: 5vw;
+    margin: 0;
+    text-align: left;
+}
+
+p {
+    font-size: 2vw;
+    margin: 10px 0 0 0;
+    text-align: left;
+    max-width: 70%; 
+    padding-right: 20px; 
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2vw;
+}
+img{
+    width: 30vw;
+    height: auto;
+}
+.button {
+    font-size: 7vw;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    color: #030303;
+    text-decoration: none;
+    background: none;
+    border: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    transform: translateX(5px);
+}
+
+#card1 { background: #FFCCCC; }
+#card2 { background: #FFD700; }
+#card3 { background: #87CEEB; }
+#card4 { background: #98FB98; }
+#card5 { background: #FFA07A; }
+#card6 { background: #DDA0DD; }
+#card7 { background: #FFB6C1; }
+#card8 { background: #00FFFF; }
+#card9 { background: #FFDAB9; }
+#card10 { background: #E6E6FA; }
+#card11 { background: #F0E68C; }
+#card12 { background: #FF69B4; }
