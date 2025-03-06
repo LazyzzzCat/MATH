@@ -222,7 +222,7 @@ img{
 
 /* Стили для текстового поля */
 .task-container #outputField {
-    font-family: "Stalinist One", sans-serif;
+    
     width: 100%;
     height: 100px;
     margin-top: 20px;
