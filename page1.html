@@ -5,28 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 1</title>
-    <link rel="stylesheet" href="css/task.css"> <!-- Отдельный CSS для страниц заданий -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="task-container" id="task1">
-        <!-- Стрелка назад -->
+    <div class="task-container" id="card1">
+        <!-- Кнопка назад -->
         <a href="index.html" class="back-button">🢀</a>
-        <!-- Заголовок задания -->
+        <!-- Заголовок -->
         <h2>Задание 1</h2>
         <!-- Иконка -->
         <div class="task-icon"><img src="pic/icon1.png" alt="Иконка 1"></div>
-        <!-- Контент страницы -->
+        <!-- Контент -->
         <div class="task-content">
-            <p>тут будет что-то</p>
-            <!-- Здесь будет основной контент страницы -->
+            <p>Выбрать количество аргументов:</p>
+            <!-- Контейнер для ползунка и значения -->
+            <div class="slider-container">
+                <input type="range" id="argSlider" min="1" max="8" value="1">
+                <span id="sliderValue">1</span>
+                  <!-- Кнопка -->
+            <button id="generateButton">Сделать</button>
+            </div>
+          
+            <!-- Текстовое поле для вывода булевой функции -->
+            <textarea id="outputField" readonly></textarea>
         </div>
     </div>
 
-    <script src="js/task1.js"></script> <!-- Подключенный скрипт для задания 1 -->
+    <script src="js/task1.js"></script>
 </body>
 
 </html>

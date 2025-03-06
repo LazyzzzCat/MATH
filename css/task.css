@@ -36,8 +36,8 @@ body {
 
 h2 {
     position: absolute;
-    top: 20px; /* Одинаковая высота для всех элементов */
-    left: 90px; /* Отступ слева, чтобы не накладывалось на стрелку */
+    top: 20px; 
+    left: 90px;
     font-size: 5vw;
     margin: 0;
     text-align: left;
@@ -45,7 +45,7 @@ h2 {
 
 .task-icon {
     position: absolute;
-    top: 20px; /* Одинаковая высота для всех элементов */
+    top: 20px; 
     right: 20px;
     width: 10vw;
     height: auto;
@@ -57,7 +57,7 @@ h2 {
 }
 
 .task-content {
-    margin-top: 80px; /* Отступ сверху, чтобы контент не накладывался на заголовок */
+    margin-top: 80px;
     font-size: 2vw;
     text-align: left;
     max-width: 80%;
