@@ -21,8 +21,16 @@
         <div class="task-icon"><img src="pic/icon3.png" alt="Иконка 3"></div>
         <!-- Контент -->
         <div class="task-content">
-           
-            </div>
+            <p>Введите нулевую остаточную:</p>
+            <input type="text" id="zeroInput" placeholder="1110">
+            <p>Введите единичную остаточную:</p>
+            <input type="text" id="oneInput" placeholder="1011">
+            <p>Введите номер аргумента:</p>
+            <input type="number" id="argInput" placeholder="1" min="1" max="8">
+            <button id="restoreButton">Восстановить</button>
+            <p>Восстановленный вектор:</p>
+            <textarea id="outputField" readonly></textarea>
+        </div>
     </div>
 
     <script src="js/task3.js"></script>

@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
     font-family: "Stalinist One", sans-serif;
     margin: 0;
@@ -8,6 +9,7 @@ body {
     font-style: normal;
 }
 
+/* Контейнер для карточек */
 .container {
     display: flex;
     flex-direction: column;
@@ -15,6 +17,7 @@ body {
     padding: 50px 0;
 }
 
+/* Стили для карточек */
 .card {
     width: 90vw;
     height: 70vh;
@@ -34,30 +37,37 @@ body {
     transform: translateX(0);
 }
 
+/* Заголовок карточки */
 h2 {
     font-size: 5vw;
     margin: 0;
     text-align: left;
 }
 
+/* Текст карточки */
 p {
     font-size: 2vw;
     margin: 10px 0 0 0;
     text-align: left;
-    max-width: 70%; 
-    padding-right: 20px; 
+    max-width: 70%;
+    padding-right: 20px;
 }
 
+/* Иконка */
 .icon {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 2vw;
 }
-img{
+
+/* Изображения */
+img {
     width: 30vw;
     height: auto;
 }
+
+/* Кнопка */
 .button {
     font-size: 7vw;
     position: absolute;
@@ -75,6 +85,7 @@ img{
     transform: translateX(5px);
 }
 
+/* Цвета карточек */
 #card1 { background: #FFCCCC; }
 #card2 { background: #FFD700; }
 #card3 { background: #87CEEB; }
@@ -88,14 +99,13 @@ img{
 #card11 { background: #F0E68C; }
 #card12 { background: #FF69B4; }
 
-
-/* ///////////////////////////////////////// */
+/* Стили для страниц заданий */
 .task-container {
     width: 90vw;
     height: 85vh;
     padding: 30px;
     margin: 20px auto;
-    background: #FFCCCC; /* Цвет карточки 1 */
+    background: #FFCCCC; /* Цвет карточки */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -103,7 +113,7 @@ img{
 
 .task-container .back-button {
     position: absolute;
-    top: 20px; /* Одинаковая высота для всех элементов */
+    top: 20px;
     left: 20px;
     font-size: 5vw;
     color: #030303;
@@ -117,7 +127,7 @@ img{
 
 .task-container h2 {
     position: absolute;
-    top: 20px; 
+    top: 20px;
     left: 90px;
     font-size: 5vw;
     margin: 0;
@@ -126,7 +136,7 @@ img{
 
 .task-container .task-icon {
     position: absolute;
-    top: 20px; 
+    top: 20px;
     right: 20px;
     width: 10vw;
     height: auto;
@@ -145,17 +155,17 @@ img{
     padding-right: 20px;
 }
 
-/* Стили для ползунка и значения */
+/* Ползунок и значение */
 .slider-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Расстояние между ползунком и цифрой */
+    gap: 10px;
     margin-top: 10px;
 }
 
 .task-container input[type="range"] {
-    width: 70%; /* Уменьшили ширину ползунка */
-    -webkit-appearance: none; /* Убираем стандартный стиль */
+    width: 70%;
+    -webkit-appearance: none;
     background: transparent;
 }
 
@@ -165,7 +175,7 @@ img{
 
 .task-container input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 5px; /* Уменьшили высоту трека */
+    height: 5px;
     background: #030303;
     border-radius: 5px;
 }
@@ -173,12 +183,12 @@ img{
 .task-container input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 20px; /* Уменьшили размер бегунка */
+    width: 20px;
     height: 20px;
     background: #030303;
     border-radius: 50%;
     cursor: pointer;
-    margin-top: -7px; /* Центрируем бегунок */
+    margin-top: -7px;
 }
 
 .task-container input[type="range"]::-moz-range-track {
@@ -196,13 +206,12 @@ img{
     cursor: pointer;
 }
 
-/* Стили для текста значения ползунка */
 .task-container #sliderValue {
     font-size: 2vw;
     color: #030303;
 }
 
-/* Стили для кнопки */
+/* Кнопка */
 .task-container #generateButton {
     font-family: "Stalinist One", sans-serif;
     margin-top: 20px;
@@ -220,9 +229,8 @@ img{
     background: #ff6f61;
 }
 
-/* Стили для текстового поля */
+/* Текстовое поле */
 .task-container #outputField {
-    
     width: 100%;
     height: 100px;
     margin-top: 20px;
@@ -232,6 +240,46 @@ img{
     color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
-    overflow-y: auto; /* Убираем вертикальный скролл */
+    resize: none;
+    overflow-y: auto;
+}
+
+/* Стили для страницы задания 3 */
+.task-container input[type="text"],
+.task-container input[type="number"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 1vw;
+    margin-top: 10px;
+    border: 1px solid #030303;
+    border-radius: 5px;
+}
+
+.task-container #restoreButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1vw;
+    background: #030303;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.task-container #restoreButton:hover {
+    background: #ff6f61;
+}
+
+.task-container #outputField {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 1vw;
+    padding: 10px;
+    background: #fff;
+    color: #030303;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
 }
