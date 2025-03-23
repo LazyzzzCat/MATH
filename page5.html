@@ -21,6 +21,18 @@
         <div class="task-icon"><img src="pic/icon5.png" alt="Иконка 5"></div>
         <!-- Контент -->
         <div class="task-content">
+            <p>Вектор функции:</p>
+            <textarea id="functionVectorDisplay" readonly></textarea>
+            <p>Выберите существенные переменные:</p>
+            <div id="variableCheckboxes">
+                <label><input type="checkbox" id="var1"> Переменная 1</label>
+                <label><input type="checkbox" id="var2"> Переменная 2</label>
+                <label><input type="checkbox" id="var3"> Переменная 3</label>
+                <label><input type="checkbox" id="none"> Нет существенных</label>
+            </div>
+            <button id="checkButton">Проверить</button>
+            <button id="restartButton">Новый вектор</button>
+            <p id="result"></p>
         </div>
     </div>
 
