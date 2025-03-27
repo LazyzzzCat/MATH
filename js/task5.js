@@ -12,7 +12,7 @@
 //     let step = len/(2**i);
 //     for(j = 0; j<len/2;j++){
 //         if(vector[i] != vector[i+step]){
-//             console.log("x"+i+" это сущщественная переменная!");
+//             console.log("x"+i+" это существенная переменная!");
 //             ess.push(i);
 //             break; 
 //         }

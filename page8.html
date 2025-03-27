@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 8: СДНФ</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="task-container" id="card8">
+        <!-- Кнопка назад -->
+        <a href="index.html" class="back-button">🢀</a>
+        
+        <!-- Заголовок -->
+        <h2>Задание 8: СДНФ</h2>
+        
+        <!-- Иконка -->
+        <div class="task-icon"><img src="pic/icon8.png" alt="Иконка 8"></div>
+        
+        <!-- Контент -->
+        <div class="task-content">
+            <!-- Блок ввода/генерации -->
+            <p>Введи вектор (или сгенерируй):</p>
+            <div class="slider-container">
+                <input type="range" id="argSlider" min="1" max="4" value="3">
+                <span id="sliderValue">3</span>
+            </div>
+            <button id="generateButton">Сгенерировать</button>
+            <input type="text" id="vectorInput" placeholder="Например: 01101001">
+            
+           
+            
+            <!-- Поле вывода -->
+            <p>Результат:</p>
+            <textarea id="outputField" readonly></textarea>
+             <!-- Кнопки для вызова функций -->
+             <button id="calc">Рассчитать СДНФ</button>
+        </div>
+    </div>
+    
+    <!-- Скрипт -->
+    <script src="js/task8and9.js"></script>
+</body>
+</html>
