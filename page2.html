@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 2</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <div class="task-container" id="card2">
         <!-- Кнопка назад -->
@@ -18,10 +16,35 @@
         <div class="task-icon"><img src="pic/icon2.png" alt="Иконка 2"></div>
         <!-- Контент -->
         <div class="task-content">
-         
+            <p>Введите вектор функции (например: 0101):</p>
+            <input type="text" id="vectorInput" placeholder="01011010" class="vector-input">
+
+            <div class="arg-selector">
+                <p>Выберите аргумент:</p>
+                <div class="arg-buttons">
+                    <button class="arg-btn active" data-arg="0">x₀</button>
+                    <button class="arg-btn" data-arg="1">x₁</button>
+                    <button class="arg-btn" data-arg="2">x₂</button>
+                </div>
+            </div>
+
+            <div class="value-selector">
+                <p>Значение аргумента:</p>
+                <div class="value-buttons">
+                    <button class="val-btn active" data-val="0">0</button>
+                    <button class="val-btn" data-val="1">1</button>
+                </div>
+            </div>
+
+            <button id="calcButton" class="action-button">Вычислить остаточную</button>
+            
+            <div class="result-box">
+                <p>Остаточная функция:</p>
+                <div id="outputField" class="output-field"></div>
+            </div>
+        </div>
     </div>
-    <!-- скрипт -->
+
     <script src="js/task2.js"></script>
 </body>
-
 </html>

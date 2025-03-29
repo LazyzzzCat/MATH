@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание 3</title>
+    <title>Задание 4</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <div class="task-container" id="card3">
+    <div class="task-container" id="card4">
         <!-- Кнопка назад -->
         <a href="index.html" class="back-button">🢀</a>
         <!-- Заголовок -->
-        <h2>Задание 3</h2>
+        <h2>Угадай булеву функцию</h2>
         <!-- Иконка -->
-        <div class="task-icon"><img src="pic/icon3.png" alt="Иконка 3"></div>
+        <div class="task-icon"><img src="pic/icon4.png" alt="Иконка 4"></div>
         <!-- Контент -->
-        <div class="task-content">
+        <div class="game-content">
+            <div class="vector-display" id="vectorDisplay">0101</div>
+            
+            <div class="function-grid">
+                <!-- Первый ряд -->
+                <button class="func-btn" data-func="0">0</button>
+                <button class="func-btn" data-func="1">x·y</button>
+                <button class="func-btn" data-func="2">x↛y</button> <!-- Коимпликация -->
+                <button class="func-btn" data-func="3">x</button>
+                
+                <!-- Второй ряд -->
+                <button class="func-btn" data-func="4">x↚y</button> <!-- Обратная коимпликация -->
+                <button class="func-btn" data-func="5">y</button>
+                <button class="func-btn" data-func="6">x⊕y</button>
+                <button class="func-btn" data-func="7">x∨y</button>
+                
+                <!-- Третий ряд -->
+                <button class="func-btn" data-func="8">x↓y</button>
+                <button class="func-btn" data-func="9">x↔y</button>
+                <button class="func-btn" data-func="10">¬y</button>
+                <button class="func-btn" data-func="11">x←y</button>
+                
+                <!-- Четвёртый ряд -->
+                <button class="func-btn" data-func="12">¬x</button>
+                <button class="func-btn" data-func="13">x→y</button>
+                <button class="func-btn" data-func="14">x|y</button>
+                <button class="func-btn" data-func="15">1</button>
+            </div>
+            
+            <div class="game-result" id="gameResult">
+                Выберите обозначение функции!
+            </div>
+            
+            <button id="nextBtn" class="action-button">Следующая функция</button>
+        </div>
     </div>
 
-    <script src="js/task3.js"></script>
+    <script src="js/task4.js"></script>
 </body>
-
 </html>
