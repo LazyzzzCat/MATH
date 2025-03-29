@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 10</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="task-container" id="card10">
+        <!-- Кнопка назад -->
+        <a href="index.html" class="back-button">🢀</a>
+        <!-- Заголовок -->
+        <h2>Задание 10</h2>
+        <!-- Иконка -->
+        <div class="task-icon"><img src="pic/icon10.png" alt="Иконка 10"></div>
+        <!-- Контент -->
+        <div class="game-content">
+            <div class="vector-display" id="vectorDisplay">0101</div>
+            
+            <div class="classes-grid">
+                <button class="class-btn" data-class="T0">T<sub>0</sub> (Сохраняет 0)</button>
+                <button class="class-btn" data-class="T1">T<sub>1</sub> (Сохраняет 1)</button>
+                <button class="class-btn" data-class="S">S (Самодвойственная)</button>
+                <button class="class-btn" data-class="M">M (Монотонная)</button>
+                <button class="class-btn" data-class="L">L (Линейная)</button>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="checkBtn" class="action-button">Проверить</button>
+                <button id="nextBtn" class="action-button">Новая функция</button>
+            </div>
+            
+            <div class="game-result" id="gameResult">
+                Выберите предполные классы для данной функции
+            </div>
+        </div>
+    </div>
+
+    <script src="js/task10.js"></script>
+</body>
+</html>
